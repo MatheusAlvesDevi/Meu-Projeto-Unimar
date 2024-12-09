@@ -2,7 +2,7 @@
    <img src="./src/assets/unimar-logo.svg" alt="" width="200"/>
 </p>
 
-> <b>Unimar Repository</b> was a project developed to help explain some basic concepts of React during the From js to React
+> <b>Unimar Repository</b> was a project developed to help explain some basic concepts of React Js e put in the pratic what i learn about it theses technologies
 
 # :computer: Technologies
 
