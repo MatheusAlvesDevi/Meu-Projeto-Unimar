@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  max-width: 90rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--gray-950);
+  padding: 1rem;
+  min-width: 90rem;
+  border-radius: 5px;
+
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+
+    .infoUser {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .infoDetails {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+
+    .nameUser {
+      color: var(--gray-200);
+    }
+
+    .tag {
+      color: var(--gray-500);
+    }
+
+    a {
+      color: var(--gray-500);
+      text-decoration: none;
+    }
+  }
+
+  .cardBody {
+    p {
+      color: var(--gray-200);
+    }
+  }
+
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    input {
+      width: 100%;
+      border-radius: 0.25rem;
+      border: none;
+      background-color: var(--background);
+      padding: 1rem;
+      color: var(--gray-200);
+    }
+
+    input::placeholder {
+      color: var(--gray-500);
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+      border: none;
+      border-radius: 0.25rem;
+      width: 4rem;
+
+      background-color: var(--blue-500);
+      color: var(--neutral-white);
+    }
+  }
+}
+
+.repositories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  color: var(--gray-500);
+  animation: spin 1s linear infinite;
+}
